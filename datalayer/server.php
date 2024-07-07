@@ -2,7 +2,7 @@
 session_start();
 $errors = array();
 
-$mysqli = new mysqli("localhost", "root", "", "registration");
+$mysqli = new mysqli("db", "root", "", "registration");
 
 if ($mysqli->connect_errno) {
     echo "Failed to connect to MySQL: " . $mysqli->connect_error;
@@ -40,7 +40,7 @@ if (isset($_POST['Register'])) {
             $lastUserID = $mysqli->insert_id;  // Get the auto-incremented UserID
             $_SESSION['UserID'] = $lastUserID;
             $_SESSION['success'] = "You are now logged in";
-            
+
             // Display an alert with user ID and password
             echo "<script>alert(`Please Make Sure To Save Your UserId and Password.\nUser ID: $lastUserID, Password: $CopyPassword`);</script>";
         } else {
@@ -66,7 +66,7 @@ if (isset($_POST['Login'])) {
         if (mysqli_num_rows($result) == 1) {
             // Destroy the previous session (if any)
             session_destroy();
-            
+
             // Start a new session
             session_start();
 
@@ -115,7 +115,7 @@ $query="SELECT * FROM patients WHERE UserID=('$userprofile')";
 
 
 
-		
+
 
 
 
@@ -132,7 +132,7 @@ if (empty($DoctorID2)) {
 }
 if (empty($DoctorPassword2)) {
 	array_push($errors,"Password is required");
-	
+
 
 		# code...
 	}
@@ -140,23 +140,23 @@ if (empty($DoctorPassword2)) {
 
 	if (count ($errors)== 0) {
 
-	
-		
-	
+
+
+
 
 	$queryD="SELECT * FROM doctor WHERE DoctorID=('$DoctorID2')AND password=('$DoctorPassword2')";
 	$resultD=mysqli_query($mysqli,$queryD);
 	if (mysqli_num_rows($resultD) ==1 )  {
-	
-	
 
-	
+
+
+
 	$_SESSION['DoctorID']=$DoctorID2;
   	$_SESSION['success']="you are now logged in";
-  	header('location:../presentaionlayer/doctor/index2.php'); 
+  	header('location:../presentaionlayer/doctor/index2.php');
 }  else{
 		array_push($errors,"The ID/Password not correct");
-		
+
 	}
 }
 }
@@ -183,19 +183,19 @@ $querydoctor="SELECT * FROM doctor WHERE DoctorID=('$doctorprofile')";
  if (isset($_POST['treatmentHistory'])) {
 		  	header('../presentaionlayer/patient/myinfo.php');
 			 ?>
-		
+
          	<table class="table2" style="margin-top: -10px">
          	<caption style="margin-left: 34px;padding: 10px;font-weight: bold;font-size: 30px;" class="asd">Treatment History</caption>
 		<tr>
 		<th>DoctorID</th>  ?>
 		<th>DoctorName</th>
 		<th>Treatment</th>
-		<th>Doctor's Note</th>	
+		<th>Doctor's Note</th>
 
 
-		</tr> 
-		
-	<?php  
+		</tr>
+
+	<?php
 		$sql11="SELECT  * FROM  description,doctor WHERE descID=('$userprofile') AND doctorIDdesc=DoctorID" ;
 		$result11=$mysqli->query($sql11);
 		if(mysqli_num_rows($result11)>=1){
@@ -206,7 +206,7 @@ $querydoctor="SELECT * FROM doctor WHERE DoctorID=('$doctorprofile')";
 
 
 			echo "</table";
-	
+
 
 
 		}
@@ -221,7 +221,7 @@ $querydoctor="SELECT * FROM doctor WHERE DoctorID=('$doctorprofile')";
 
 
 
-<?php  
+<?php
 
 if (isset($_POST['Login3'])) {
 
@@ -233,7 +233,7 @@ if (empty($adminID)) {
 }
 if (empty($adminpassword)) {
 	array_push($errors,"Password is required");
-	
+
 
 		# code...
 	}
@@ -241,25 +241,25 @@ if (empty($adminpassword)) {
 
 	if (count ($errors)== 0) {
 
-	
-		
-	
+
+
+
 
 	$queryA="SELECT * FROM admin WHERE AdminID=('$adminID')AND adminpassword=('$adminpassword')";
 	$resultA=mysqli_query($mysqli,$queryA);
 	if (mysqli_num_rows($resultA) ==1 )  {
-	
-	
 
-	
+
+
+
 	$_SESSION['AdminID']=$adminID;
   	$_SESSION['success']="you are now logged in";
-  	header('location:../presentaionlayer/admin/index3.php'); 
+  	header('location:../presentaionlayer/admin/index3.php');
 }  else{
 		array_push($errors,"The ID/Password not correct");
-		
+
 	}
 }
 }
-   
+
  ?>

@@ -1,9 +1,9 @@
-<?php  
+<?php
 
 $errors=array();
 include ('server.php');
 
-$mysqli = new mysqli("localhost","root","","registration");
+$mysqli = new mysqli("db","root","","registration");
 
 if ($mysqli -> connect_errno) {
   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
@@ -167,15 +167,15 @@ if (isset($_POST['Delete'])) {
 
 		if ($mysqli->affected_rows==0) {
 			 array_push($errors,"Wrong Doctor ID");
-			
+
 			# code...
 		}
 
 	}
 	  else {
-	  
+
 	  echo 'Book is Canceled';
-	  
+
 
 
 	  }
@@ -192,11 +192,11 @@ if (isset($_POST['Delete'])) {
    	$opt.="<option value ='{$row['categorey']}'>{$row['categorey']}</option>";
    }
    	$opt.="</select>";
-   
 
- 
 
-  
+
+
+
    }
 
 }
