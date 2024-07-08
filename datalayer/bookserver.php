@@ -13,15 +13,10 @@ if ($mysqli -> connect_errno) {
 
 if (isset($_POST['Book'])) {
     // Retrieve form data
-    $AppoID = $mysqli->real_escape_string($_POST['AppoID']);
     $Date = $mysqli->real_escape_string($_POST['Date']);
     $Time = $mysqli->real_escape_string($_POST['Time']);
 
     // Validate form data
-    if (empty($AppoID)) {
-        array_push($errors, "Appointment ID is required");
-    }
-
     if (empty($Date)) {
         array_push($errors, "Date is required");
     }
@@ -43,7 +38,7 @@ if (isset($_POST['Book'])) {
     $userprofile = $_SESSION['UserID']; // Assuming this holds the user's ID
 
     // Construct and execute the SQL query
-    $sql = "INSERT INTO bookapp (AppoID, Date, Time, patientID, docID) VALUES ('$AppoID', '$Date', '$Time', '$userprofile', '$docID')";
+    $sql = "INSERT INTO bookapp (Date, Time, patientID, docID) VALUES ('$Date', '$Time', '$userprofile', '$docID')";
     $result = $mysqli->query($sql);
 
     // Check if the query executed successfully
