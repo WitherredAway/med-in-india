@@ -206,7 +206,7 @@ h1 {
 <body>
 <header class="header">
     <div class="image1">
-        <a href="#home" class="logo" style="margin-left: 50px;"><img src="image/LOGO.png" alt="" height="50px"></i></a>
+        <a href="#home" class="logo" style="margin-left: 50px;"><img src="image/Logo.png" alt="" height="50px"></i></a>
     </div>
     <nav class="navbar">
         <a href="Doctorpatient.php">Home</a>

@@ -11,7 +11,7 @@ include '../datalayer/server.php'; ?>
 </head>
 <body>
 <header class="header">
-<a href="#" class="logo" style="margin-left: 50px;"><img src="image/LOGO.png" alt="" height="50px"></i></a>
+<a href="#" class="logo" style="margin-left: 50px;"><img src="image/Logo.png" alt="" height="50px"></i></a>
 </header>
 <section>
 	<div class="formheader">

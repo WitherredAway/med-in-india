@@ -9,7 +9,7 @@
 </head>
 
 <header class="header" style="width:100%;">
-<a href="#" class="logo" style="margin-left: 50px;"><img src="image/LOGO.png" alt="" height="50px"></i></a>
+<a href="#" class="logo" style="margin-left: 50px;"><img src="image/Logo.png" alt="" height="50px"></i></a>
     <nav class="navbar">
         <a href=" index.php">MyInfo</a>
         <a href=" book.php">Book Appointment</a>
