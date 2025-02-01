@@ -26,7 +26,7 @@
 <body>
 
 
-	
+
 <form method="post" action="searchdonor.php">
 
 	<?php include ('../../datalayer/errors.php') ;?>
@@ -45,9 +45,9 @@
 	</form>
 
 
-	
 
-		<?php 
+
+		<?php
 
          if (isset($_POST['SearchD'])) {
 
@@ -63,7 +63,7 @@
 
 
 
-		</tr> <?php  
+		</tr> <?php
 
 
 		$dID3 =$mysqli -> real_escape_string($_POST['dID3']);

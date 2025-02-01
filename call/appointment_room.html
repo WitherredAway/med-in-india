@@ -10,7 +10,7 @@
 <header class="header">
     <a href="#" class="logo" style="margin-left: 50px;"><img src="Logo.png" alt="" height="50px"></i></a>
 </header>
-<body>    
+<body>
     <main id="lobby-container">
         <div id="form-container">
             <div id="form__container__header">
@@ -33,7 +33,7 @@
     form.addEventListener('submit', (e) => {
         e.preventDefault()
         let inviteCode = e.target.invite_link.value
-        window.location = `check_up.html?room=${inviteCode}` 
+        window.location = `check_up.html?room=${inviteCode}`
     })
 </script>
 </html>

@@ -7,7 +7,7 @@
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
-        
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
         body {
         height: 100%;
@@ -30,7 +30,7 @@
 
     label {
         margin-right: 10px; /* Add some right margin to the label */
-        
+
     }
 
     input {
@@ -124,7 +124,7 @@ html{
     font-size: 1.7rem;
     color: var(--light-color);
     margin-left: 2rem;
-}    
+}
 .header .navbar a:hover{
     color: var(--green);
 }
@@ -150,7 +150,7 @@ div {
 
 label {
     margin-right: 10px; /* Add some right margin to the label */
-    
+
 }
 
 input {

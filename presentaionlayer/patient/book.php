@@ -44,13 +44,13 @@ include '../../datalayer/bookserver.php';
             <button type="submit" name="Search" class="btn" style="margin: 0 auto;display: block;width:100px;height:30px;font-size: 1.6rem;color: white;background: #16a085;border: none;border-radius: 5px;cursor: pointer;">Search</button>
         </div>
 
-        <?php  
+        <?php
         if (isset($_POST['Search'])) {
             $categorey = mysqli_real_escape_string($mysqli, $_POST['categorey']);
             $query2 = "SELECT * FROM doctor WHERE categorey=('$categorey')";
             $result2 = mysqli_query($mysqli, $query2);
         ?>
-        <div class="input-group" style="margin-bottom: 5px;width: 100%;"> 
+        <div class="input-group" style="margin-bottom: 5px;width: 100%;">
             <label style="display: inline-block;text-align: left;font-size: 1.6rem;">Doctor ID</label>
             <select class="input-group2" name="docID" style="height: 50px;width: calc(100% - 22px);padding: 10px;font-size: 1.6rem;border-radius: 5px;border: 1px solid #282828;display: inline-block;box-sizing: border-box;">
                 <?php while ($row2 = mysqli_fetch_assoc($result2)) { ?>
@@ -59,7 +59,7 @@ include '../../datalayer/bookserver.php';
             </select>
         </div>
 
-        
+
 
         <div class="input-group">
             <label style="display: inline-block;text-align: left;font-size: 1.6rem;">Date</label>

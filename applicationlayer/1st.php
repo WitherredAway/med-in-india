@@ -22,7 +22,7 @@ include '../datalayer/server.php'; ?>
 
 		<?php include ('../datalayer/errors.php'); ?>
 
-		
+
 
 
 		<div class="input-group">
@@ -63,7 +63,7 @@ include '../datalayer/server.php'; ?>
 			<input type="text" name="bloodtype">
 
 		</div>
-	
+
 
 		<div class="input-group">
 			<button type="submit" name="Register" class="btn">Register</button>
@@ -72,7 +72,7 @@ include '../datalayer/server.php'; ?>
 		<p>
 			Already a member? <a href="login.php">Sign in </a>
 		</p>
-		
+
 
 
 

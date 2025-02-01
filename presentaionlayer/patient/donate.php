@@ -57,7 +57,7 @@ if (mysqli_num_rows($result) == 1) {
 
 
 
-	<?php  
+	<?php
     if (isset($_POST['Donate'])) {
 
 	$DUserID 			= $mysqli -> real_escape_string($_POST['DUserID']);
@@ -67,7 +67,7 @@ if (mysqli_num_rows($result) == 1) {
 	$DEmail 			= $mysqli -> real_escape_string($_POST['DEmail']);
 	$Dbloodtype 		= $mysqli -> real_escape_string($_POST['Dbloodtype']);
 	$Dorgan				= $mysqli -> real_escape_string($_POST['Organ']);
-	
+
 
 
 
@@ -114,9 +114,9 @@ if (count($errors) == 0) {
 ?>
 
 	<h2 class="thanks"> <?php printf("Thanks For Donation",$mysqli->affected_rows);?></h2>
-			
-			
-		<?php 
+
+
+		<?php
 
 
 

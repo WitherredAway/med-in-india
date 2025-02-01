@@ -26,7 +26,7 @@
 <body>
 
 
-	
+
 <form method="post" action="searchdoctor.php">
 
 	<?php include ('../../datalayer/errors.php') ;?>
@@ -42,7 +42,7 @@
 		<button type="submit" name="Search" class="btn" class="btn" class="btn" style="margin: 5px auto;display: block;width:100px;height:30px;font-size: 1.6rem;color: white;background: #16a085;border: none;border-radius: 5px;cursor: pointer;position:absolute;right:730px;top:340px;">Search</button>
 	</div>
 
-	
+
 
 
 
@@ -54,21 +54,21 @@
 	</form>
 
 
-	
 
-		<?php 
+
+		<?php
 
          if (isset($_POST['Search'])) {
 
          ?>	<table class="table2" style="border-collapse: collapse;width: 100%;color: #282828;font-family: monospace;font-size: 20px;text-align: center;margin-top: 220px;">
-		<tr style="border:1px solid #16a085;"> 
+		<tr style="border:1px solid #16a085;">
 		<th style="background-color: #16a085;color: white;">Doctor ID</th>
 		<th style="background-color: #16a085;color: white;">Doctor Name</th>
 		<th style="background-color: #16a085;color: white;">Address</th>
 		<th style="background-color: #16a085;color: white;">Contact Number</th>
 		<th style="background-color: #16a085;color: white;">Category</th>
 
-		</tr> <?php  
+		</tr> <?php
 
 
 		$dID =$mysqli -> real_escape_string($_POST['dID']);

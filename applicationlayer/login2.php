@@ -11,13 +11,13 @@
 <body class="Dbody">
 
 <header class="header">
-<a href="#" class="logo" style="margin-left: 50px;"><img src="image/LOGO.png" alt="" height="50px"></i></a>
+<a href="#" class="logo" style="margin-left: 50px;"><img src="image/Logo.png" alt="" height="50px"></i></a>
 <nav class="navbar">
     <a href="Doctorpatient.php">Home</a>
 </nav>
 </header>
 <img id="gif" src="image/Doctorpic.gif" alt="">
-	
+
 <section>
 	<div class="Dheader">
 		<h2>Doctor Login</h2>

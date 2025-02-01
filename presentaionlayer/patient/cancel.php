@@ -23,7 +23,7 @@
 	</nav>
 </header>
 <h1 class="heading" style="text-align: center;padding-bottom: 2rem;text-shadow: var(--text-shadow);text-transform: uppercase;color: var(--black);font-size: 5rem;letter-spacing: 0.4rem;margin-top: 80px;">Cancel <span style="text-transform: uppercase;color: var(--green);">Booking</span></h1>
-<body>	
+<body>
 <form method="post" action="cancel.php">
 
 	<?php include ('../../datalayer/errors.php') ;?>
@@ -39,7 +39,7 @@
 	</div>
 </form>
 <img src="image/Cancelbook.gif" alt="" style="position:absolute; left:250px;top:180px;">
-</body> 
+</body>
 <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script src="https://mediafiles.botpress.cloud/3d4cf0b1-b1d8-43db-816d-95e960425658/webchat/config.js" defer></script>
 </html>
