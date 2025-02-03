@@ -76,7 +76,7 @@ include '../../datalayer/bookserver.php';
         </div>
         <?php } ?>
     </form>
-    <img src="image/Book.gif" alt="" style="position:absolute; left:250px;top:180px;">
+    <img src="image/Book.gif" alt="" style="position:absolute; left:250px; top:180px; height: 25vw; width: 25vw;">
 </body>
 <!--<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script src="https://mediafiles.botpress.cloud/3d4cf0b1-b1d8-43db-816d-95e960425658/webchat/config.js" defer></script>-->
