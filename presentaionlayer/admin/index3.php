@@ -83,7 +83,7 @@
 		</div>
 
 	</form>
-        
+
 	<h1 class="heading1">Delete <span>Doctor</span></h1>
 
 	<form method="post" action="index3.php" class="delete" style="position:absolute;right:200px; top:190px;">
@@ -99,7 +99,7 @@
 		</div>
 
 	</form>
-	<img src="image/Doc-Patient.gif" alt="" style="width:300px;position: absolute; top: 350px;right: 290px;">
+	<img src="image/Doc-Patient.gif" alt="" style="width:300px;position: absolute; top: 350px;right: 290px; height: 20vw; width: 20vw;">
 </body>
 
 </html>
