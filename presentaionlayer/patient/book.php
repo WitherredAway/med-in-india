@@ -26,57 +26,47 @@ include '../../datalayer/bookserver.php';
 </header>
 <body>
     <h1 class="heading" style="text-align: center;padding-bottom: 2rem;text-shadow: var(--text-shadow);text-transform: uppercase;color: var(--black);font-size: 5rem;letter-spacing: 0.4rem;margin-top: 80px;">Book <span style="text-transform: uppercase;color: var(--green);">Appointment</span></h1>
-    <form method="post" action="book.php" style="position:absolute;right:250px;">
+    <form method="post" action="book.php">
         <?php include ('../../datalayer/errors.php');?>
 
-        <div class="input-group" style="margin-bottom: 5px;width: 100%;">
-            <label style="display: inline-block;text-align: left;font-size: 1.6rem;">Category</label>
-            <select name="categorey" class="xd" style="height: 50px;width: calc(100% - 22px);padding: 10px;font-size: 1.6rem;border-radius: 5px;border: 1px solid #282828;display: inline-block;box-sizing: border-box;">
-                <option value="bone">Bone</option>
-                <option value="heart">Heart</option>
-                <option value="Dentistry">Dentistry</option>
-                <option value="MentalHealth">Mental Health</option>
-                <option value="Surgery">Surgery</option>
-            </select>
-        </div>
 
-        <div class="input-group" style="margin-bottom: 5px;width: 100%;">
-            <button type="submit" name="Search" class="btn" style="margin: 0 auto;display: block;width:100px;height:30px;font-size: 1.6rem;color: white;background: #16a085;border: none;border-radius: 5px;cursor: pointer;">Search</button>
-        </div>
-
-        <?php
-        if (isset($_POST['Search'])) {
-            $categorey = mysqli_real_escape_string($mysqli, $_POST['categorey']);
-            $query2 = "SELECT * FROM doctor WHERE categorey=('$categorey')";
-            $result2 = mysqli_query($mysqli, $query2);
-        ?>
-        <div class="input-group" style="margin-bottom: 5px;width: 100%;">
-            <label style="display: inline-block;text-align: left;font-size: 1.6rem;">Doctor ID</label>
-            <select class="input-group2" name="docID" style="height: 50px;width: calc(100% - 22px);padding: 10px;font-size: 1.6rem;border-radius: 5px;border: 1px solid #282828;display: inline-block;box-sizing: border-box;">
-                <?php while ($row2 = mysqli_fetch_assoc($result2)) { ?>
-                    <option> <?php echo $row2['DoctorID'] ?> </option>
+        <div style="display: flex; justify-content: center;">
+            <img src="image/Book.gif" alt="" style="margin: 0;">
+            <div>
+                <div class="input-group" style="margin: 0; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <label style="display: inline-block;text-align: left;font-size: 1.6rem;">Category</label>
+                    <select name="categorey" class="xd" style="height: 50px;width: 200px;padding: 10px;font-size: 1.6rem;border-radius: 5px;border: 1px solid #282828;display: inline-block;box-sizing: border-box;">
+                        <option value="bone">Bone</option>
+                        <option value="heart">Heart</option>
+                        <option value="Dentistry">Dentistry</option>
+                        <option value="MentalHealth">Mental Health</option>
+                        <option value="Surgery">Surgery</option>
+                    </select>
+                    <button type="submit" name="Search" class="btn" style="margin: 0 auto;display: block;width:100px;height:30px;font-size: 1.6rem;color: white;background: #16a085;border: none;border-radius: 5px;cursor: pointer;">Search</button>
+                </div>
+                <?php
+                if (isset($_POST['Search'])) {
+                    $categorey = mysqli_real_escape_string($mysqli, $_POST['categorey']);
+                    $query2 = "SELECT * FROM doctor WHERE categorey=('$categorey')";
+                    $result2 = mysqli_query($mysqli, $query2);
+                ?>
+                <div class="input-group" style="margin: 0; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <label style="display: inline-block;text-align: left;font-size: 1.6rem;">Doctor ID</label>
+                    <select class="input-group2" name="docID" style="height: 50px;width: 200px;padding: 10px;font-size: 1.6rem;border-radius: 5px;border: 1px solid #282828;display: inline-block;box-sizing: border-box;">
+                        <?php while ($row2 = mysqli_fetch_assoc($result2)) { ?>
+                            <option> <?php echo $row2['DoctorID'] ?> </option>
+                        <?php } ?>
+                    </select>
+                    <label style="display: inline-block;text-align: left;font-size: 1.6rem;">Date</label>
+                    <input type="Date" name="Date" style="height: 50px;width: 200px;padding: 10px;font-size: 1.6rem;border-radius: 5px;border: 1px solid #282828;display: inline-block;box-sizing: border-box;">
+                    <label style="display: inline-block;text-align: left;font-size: 1.6rem;">Time</label>
+                    <input type="Time" name="Time" style="height: 50px;width: 200px;padding: 10px;font-size: 1.6rem;border-radius: 5px;border: 1px solid #282828;display: inline-block;box-sizing: border-box;">
+                    <button type="submit" name="Book" class="btn" style="margin: 5px auto;display: block;width:100px;height:30px;font-size: 1.6rem;color: white;background: #16a085;border: none;border-radius: 5px;cursor: pointer;">BOOK</button>
+                </div>
                 <?php } ?>
-            </select>
+            </div>
         </div>
-
-
-
-        <div class="input-group">
-            <label style="display: inline-block;text-align: left;font-size: 1.6rem;">Date</label>
-            <input type="Date" name="Date" style="height: 50px;width: calc(100% - 22px);padding: 10px;font-size: 1.6rem;border-radius: 5px;border: 1px solid #282828;display: inline-block;box-sizing: border-box;">
-        </div>
-
-        <div class="input-group">
-            <label style="display: inline-block;text-align: left;font-size: 1.6rem;">Time</label>
-            <input type="Time" name="Time" style="height: 50px;width: calc(100% - 22px);padding: 10px;font-size: 1.6rem;border-radius: 5px;border: 1px solid #282828;display: inline-block;box-sizing: border-box;">
-        </div>
-
-        <div class="input-group">
-            <button type="submit" name="Book" class="btn" style="margin: 5px auto;display: block;width:100px;height:30px;font-size: 1.6rem;color: white;background: #16a085;border: none;border-radius: 5px;cursor: pointer;">BOOK</button>
-        </div>
-        <?php } ?>
     </form>
-    <img src="image/Book.gif" alt="" style="position:absolute; left:250px; top:180px; height: 25vw; width: 25vw;">
 </body>
 <!--<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script src="https://mediafiles.botpress.cloud/3d4cf0b1-b1d8-43db-816d-95e960425658/webchat/config.js" defer></script>-->
