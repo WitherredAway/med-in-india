@@ -38,7 +38,7 @@
 		<button type="submit" name="cancel" class="btn" class="btn" style="margin: 5px auto;display: block;width:100px;height:30px;font-size: 1.6rem;color: white;background: #16a085;border: none;border-radius: 5px;cursor: pointer;position:absolute;right:430px;top:430px;">Cancel</button>
 	</div>
 </form>
-<img src="image/Cancelbook.gif" alt="" style="position:absolute; left:250px;top:180px;">
+<img src="image/Cancelbook.gif" alt="" style="position:absolute; left:250px; top:180px; height: 25vw; width: 25vw;">
 </body>
 <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script src="https://mediafiles.botpress.cloud/3d4cf0b1-b1d8-43db-816d-95e960425658/webchat/config.js" defer></script>
