@@ -34,21 +34,17 @@
 
 		<?php include('../../datalayer/errors.php'); ?>
 
-		<div class="input-group" style="margin-bottom: 5px;width: 100%; ">
-			<label
-				style="display: inline-block;text-align: left;position:absolute;right:740px;top:220px;font-size: 1.6rem;">Search
+		<div class="input-group"
+			style="margin-bottom: 5px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+			<label style="display: inline-block;text-align: left;font-size: 1.6rem;">Search
 				By</label>
-			<span
-				style="display: inline-block;text-align: left;position:absolute;right:645px;top:250px;font-size: 1.6rem;">(Doctor/Doctor
-				Name/Categorey)</span>
+			<span style="display: inline-block;text-align: left;font-size: 1.6rem;">(Doctor/Doctor
+				Name/Category)</span>
 			<input type="text" name="dID"
-				style="height: 50px;width: 200px;padding: 10px;font-size: 1.6rem;border-radius: 5px;border: 1px solid #282828;display: inline-block;box-sizing: border-box;position:absolute;right:678px;top:280px;">
+				style="height: 50px;width: 200px;padding: 10px;font-size: 1.6rem;border-radius: 5px;border: 1px solid #282828;display: inline-block;box-sizing: border-box;">
 
-		</div>
-
-		<div class="input-group" style="margin-bottom: 5px;width: 100%; ">
 			<button type="submit" name="Search" class="btn" class="btn" class="btn"
-				style="margin: 5px auto;display: block;width:100px;height:30px;font-size: 1.6rem;color: white;background: #16a085;border: none;border-radius: 5px;cursor: pointer;position:absolute;right:730px;top:340px;">Search</button>
+				style="margin: 5px auto;display: block;width:100px;height:30px;font-size: 1.6rem;color: white;background: #16a085;border: none;border-radius: 5px;cursor: pointer;">Search</button>
 		</div>
 
 	</form>
