@@ -1,4 +1,5 @@
-# THIS IS NOT MY CODE, ORIGINAL CAN BE FOUND [HERE](https://github.com/debjitmitra000/MED-IN-INDIA)
+# ⚠️⚠️⚠️ THIS IS NOT MY CODE, ORIGINAL CAN BE FOUND [HERE](https://github.com/debjitmitra000/MED-IN-INDIA) ⚠️⚠️⚠️
+
 <h1 align="center">🧑‍⚕️ Med-In-India 🧑‍⚕️</h1>
 <h2 align="center">✨ A Virtual Medical Solution Project ✨</h2>
 
@@ -45,8 +46,8 @@ Med-In-India offers a wide range of services for patients, such as virtual inter
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-<h2>Creators 👨‍💻</h2>
-
+<h2>ORIGINAL Creators 👨‍💻</h2>
+Original Repo: https://github.com/debjitmitra000/MED-IN-INDIA
 - ****[**Debjit Mitra**](https://github.com/debjitmitra000)****.
 - ****[**Sayar Paul**](https://github.com/Sayar-21223)****.
 - ****[**Sourodip Ghosh**](https://github.com/RajSourodip)****.
@@ -57,13 +58,8 @@ Med-In-India offers a wide range of services for patients, such as virtual inter
 
 <h2>Preview 👁️</h2>     
 
-![Med-in-India](https://github.com/debjitmitra000/MED-IN-INDIA/assets/139372591/4355a138-84ae-42df-bc27-47fcd3771533)
+PREVIEW REMOVED BECAUSE INAPPROPRIATE WORD AND I DON'T WANT THAT ON MY GITHUB. REMINDER THAT THIS IS NOT MY CODE NOR MY PROJECT, ORIGINAL CAN BE FOUND [HERE](https://github.com/debjitmitra000/MED-IN-INDIA)
 
-
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-<h2>Preview Video 🎬</h2>
-<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-<b>https://www.youtube.com/watch?v=oQ-4SDWHNTQ</b>
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 <h2>Devfolio Link 🔗</h2>
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
