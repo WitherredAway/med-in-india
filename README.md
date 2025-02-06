@@ -38,7 +38,7 @@ Med-In-India offers a wide range of services for patients, such as virtual inter
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-<h2>Project Created 🗺️</h2>
+<h2>ORIGINAL Project Created 🗺️</h2>
 <b>At:</b> Diversion 2k24 (India’s First-ever AI-Powered Hackathon).<br>
 <b>On:</b> Feb 3 & 4, 2024.
 
@@ -48,6 +48,7 @@ Med-In-India offers a wide range of services for patients, such as virtual inter
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 <h2>ORIGINAL Creators 👨‍💻</h2>
 Original Repo: https://github.com/debjitmitra000/MED-IN-INDIA
+
 - ****[**Debjit Mitra**](https://github.com/debjitmitra000)****.
 - ****[**Sayar Paul**](https://github.com/Sayar-21223)****.
 - ****[**Sourodip Ghosh**](https://github.com/RajSourodip)****.
@@ -61,7 +62,7 @@ Original Repo: https://github.com/debjitmitra000/MED-IN-INDIA
 PREVIEW REMOVED BECAUSE INAPPROPRIATE WORD AND I DON'T WANT THAT ON MY GITHUB. REMINDER THAT THIS IS NOT MY CODE NOR MY PROJECT, ORIGINAL CAN BE FOUND [HERE](https://github.com/debjitmitra000/MED-IN-INDIA)
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-<h2>Devfolio Link 🔗</h2>
+<h2>ORIGINAL Devfolio Link 🔗</h2>
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 <b>https://devfolio.co/projects/medinindia-47e0</b>
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
